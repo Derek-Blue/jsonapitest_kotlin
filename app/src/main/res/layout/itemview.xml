@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.jsonapitest_kotlin.Tools.UrlImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:id="@+id/post_image"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/post_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#000"
+        android:id="@+id/post_title"
+        android:layout_alignBottom="@+id/post_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:gravity="center"/>
+
+</RelativeLayout>
